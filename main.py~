@@ -49,12 +49,12 @@ def login(email=None, password=None):
 
    gd = gdata.photos.service.PhotosService() 
    gd.email = email # email
-   gd.password = password 
+   gd.password = password #'okgiugplnzlcywlz'# -- password
    gd.source = 'SyncPicasaAlbum'
    gd.ProgrammaticLogin()
    return gd
 
-gd_client = login()
+gd_client = login(password ='okgiugplnzlcywlz')
 print_albums(gd_client.email, gd_client)
 selected_album = input('Select Album:')
 
