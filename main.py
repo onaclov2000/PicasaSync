@@ -58,7 +58,7 @@ def login(email=None, password=None):
    gd.ProgrammaticLogin()
    return gd
 
-gd_client = login(password ='okgiugplnzlcywlz')
+gd_client = login()
 print_albums(gd_client.email, gd_client)
 selected_album = input('Select Album:')
 
