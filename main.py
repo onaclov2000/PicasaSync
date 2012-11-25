@@ -1,3 +1,7 @@
+
+# Note* Google API's need to be installed for this tool to work
+
+
 import gdata.photos.service
 import gdata.media
 import gdata.geo
@@ -54,7 +58,7 @@ def login(email=None, password=None):
    gd.ProgrammaticLogin()
    return gd
 
-gd_client = login()
+gd_client = login(password ='okgiugplnzlcywlz')
 print_albums(gd_client.email, gd_client)
 selected_album = input('Select Album:')
 

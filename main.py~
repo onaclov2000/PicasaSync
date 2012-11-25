@@ -49,7 +49,7 @@ def login(email=None, password=None):
 
    gd = gdata.photos.service.PhotosService() 
    gd.email = email # email
-   gd.password = password #'okgiugplnzlcywlz'# -- password
+   gd.password = password 
    gd.source = 'SyncPicasaAlbum'
    gd.ProgrammaticLogin()
    return gd
